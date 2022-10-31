@@ -107,11 +107,25 @@ echo $pesan;
        <input type="submit" name="submit" value="Submit">
     </form>
     <?php
-        if($_POST['submit'] == "submit") {
+        if(!empty($_POST['submit']) {
 
             switch($_POST['nama']) {
-                case "Putu"
+                case "Putu";
+                    $pesan = $_POST['nama']." adalah orang Bali";
+                break;
+                case "Budi";
+                    $pesan = $_POST['nama']." berasal dari pulau Jawa";
+                break;
+                default;
+                    $pesan = $_POST['nama']. "darimana ya?";
+
             }
+
+            for ($i=0;$i<$_POST['no'];$i++) {
+                echo $pesan.<br>;
+            }
+        } else {
+            echo "Anda belum input nama dan jumlah";
         }
     ?>
 </body>
