@@ -96,7 +96,7 @@ echo $pesan;
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>praktik materi php lanjutan</title>
 </head>
 <body>
     <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
@@ -107,7 +107,7 @@ echo $pesan;
        <input type="submit" name="submit" value="Submit">
     </form>
     <?php
-        if(!empty($_POST['submit']) {
+        if(!empty($_POST['submit']) 
 
             switch($_POST['nama']) {
                 case "Putu";
